@@ -1,9 +1,25 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    /* background-image: linear-gradient(to right, blue, pink, purple) 3;  */
+}
 
-.w3-bar-item, a:hover, a:active {
-    text-align:center;
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
-    /* border-image-slice: 1; */
-    width:100%;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #f1f1f1; */
+}
+
+
+.w3-bar .w3-bar-item {
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 3s;
+  }
+
+  .w3-bar .w3-bar-item:hover {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, red, yellow, blue) 1;
+  }
+
+  .navbar-item:hover::after {
+    opacity: 1; /* Show on hover */
 }
